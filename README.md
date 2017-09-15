@@ -1,1 +1,3 @@
-# deep_learning_practice
+# Deep learning practice
+
+## the codes in repository come from 'Deep learning for scratch'
