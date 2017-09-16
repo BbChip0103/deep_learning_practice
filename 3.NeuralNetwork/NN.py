@@ -23,7 +23,8 @@ def forward(network, x) :
     a2 = np.dot(z1, W2) + b2
     z2 = fun.sigmoid(a2)
     a3 = np.dot(z2, W3) + b3
-    y = fun.identity_function(a3)
+    #y = fun.identity_function(a3)
+    y = fun.softmax(a3)
 
     return y
 
@@ -32,3 +33,4 @@ network = init_network()
 x = np.array([1.0, 0.5])
 y = forward(network, x)
 print(y)
+print(np.sum(y))
